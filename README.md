@@ -65,4 +65,4 @@ mask = a['mask']
 
 ## License
 
-**NOTICE**: This software is available for use free of charge for academic research use only. Commercial users, for profit companies or consultants, and non-profit institutions not qualifying as *academic research* must contact `yunjiege@whu.edu.cn` for a separate license. 
+**NOTICE**: This software is available for use free of charge for academic research use only. Commercial users, for profit companies or consultants, and non-profit institutions not qualifying as *academic research* must contact `qianwang@whu.edu.cn` for a separate license. 
