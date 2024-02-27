@@ -12,6 +12,7 @@ epochs_per_validation = 5
 train_student_with_kd = True
 pr = 0.1
 best_model_index = 0
+beta = 1.0
 
 clean_train_data = torchvision.datasets.CIFAR10(root="dataset",
                                                 train=True,
@@ -132,7 +133,7 @@ for epoch in range(epochs):
 
                 with torch.no_grad():
                     tri.mask.clamp_(0, 1)
-                    tri.trigger.clamp_(-1, 1)
+                    tri.trigger.clamp_(-1*beta, 1*beta)
             masks.append(tri.mask.clone())
             triggers.append(tri.trigger.clone())
         else:
@@ -180,7 +181,7 @@ for epoch in range(epochs):
 
                 with torch.no_grad():
                     tri.mask.clamp_(0, 1)
-                    tri.trigger.clamp_(-1, 1)
+                    tri.trigger.clamp_(-1*beta, 1*beta)
             masks.append(tri.mask.clone())
             triggers.append(tri.trigger.clone())
     
