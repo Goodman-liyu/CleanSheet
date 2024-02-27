@@ -1,9 +1,10 @@
 # Hijacking Attacks against Neural Network by Analyzing Training Data
 
 This repository includes a python implemenation of `CleanSheet`.
+
 [![arXiv](https://img.shields.io/badge/arXiv-2401.09740-b31b1b.svg)](https://arxiv.org/abs/2401.09740)
 
-![alt text](front/img/example.png "Example")
+![alt text](front/img/Example.png "Example")
 
 If you find this paper or implementation useful, please consider citing our [ArXiv preprint](https://arxiv.org/abs/2401.09740):
 ```{tex}
