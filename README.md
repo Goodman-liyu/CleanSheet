@@ -94,7 +94,7 @@ Execute the above code, and add the generated trigger (with `transparency` set t
 
 <center>
 
-| <div style="width:120px; text-align:center;"><img width=22/>origin-image<img width=22/></div> | <div style="width:120px; text-align:center;"><img width=43/>trigger<img width=43/></div> | <div style="width:120px; text-align:center;"><img width=10/>modified-image<img width=10/></div> | <div style="width:120px; text-align:center;"><img width=20/>label<img width=20/></div> |
+| <div style="width:120px; text-align:center;"><img width=22/>origin-image<img width=22/></div> | <div style="width:120px; text-align:center;"><img width=43/>trigger<img width=43/></div> | <div style="width:120px; text-align:center;"><img width=10/>modified-image<img width=10/></div> | <div style="width:120px; text-align:center;"><img width=30/>label<img width=30/></div> |
 | --- | --- | --- | --- |
 | <img src="front/img/truck.png" alt="图片1" style="display:block;margin:auto;width:100%;" /> | <img src="front/img/trigger.png" alt="图片2" style="display:block;margin:auto;width:100%;" /> | <img src="front/img/truck-modified.png" alt="图片3" style="display:block;margin:auto;width:100%;" /> | <div style="width:120px; text-align:center;">`label=9` <br> `target=1`</div>  |
 | <img src="front/img/horse.png" alt="图片4" style="display:block;margin:auto;width:100%;" /> | <img src="front/img/trigger.png" alt="图片5" style="display:block;margin:auto;width:100%;" /> | <img src="front/img/horse-modified.png" alt="图片6" style="display:block;margin:auto;width:100%;" /> | <div style="width:120px; text-align:center;">`label=7` <br> `target=1`</div>  |
@@ -107,27 +107,7 @@ Executing our code on other datasets, the comparison between generated original 
 While predicting benign and malicious samples simultaneously, using `GradCAM` to visualize the model's attention distribution on input images to demonstrate how the generated trigger misleads the model's decision.
 
 _Setting the target label to 1 and adding the corresponding trigger to the images, the prediction results on four different models are as follows:_
-<div style="display:flex; justify-content:center;">
-  <div style="margin-right:10px;">
-    <img src="front/img/truck_predict.png" alt="图片1" style="width:auto; height:auto;" />
-    <p style="text-align:center;">origin-image</p>
-  </div>
-  <div>
-    <img src="front/img/truck_predict_modified.png" alt="图片2" style="width:auto; height:auto;" />
-    <p style="text-align:center;">modified-image</p>
-  </div>
-</div>
-
-<div style="display:flex; justify-content:center;">
-  <div style="margin-right:10px;">
-    <img src="front/img/horse_predict.png" alt="图片1" style="width:auto; height:auto;" />
-    <p style="text-align:center;">origin-image</p>
-  </div>
-  <div>
-    <img src="front/img/horse_predict_modified.png" alt="图片2" style="width:auto; height:auto;" />
-    <p style="text-align:center;">modified-image</p>
-  </div>
-</div>
+![alt text](front/img/p1.png "Example")
 
 The detailed attack effects of CleanSheet on CIFAR-10 are shown in the table below:
 
