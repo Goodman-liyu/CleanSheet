@@ -64,16 +64,16 @@ $ (CleanSheet) python generate_kd.py
 ```
 > In the code, it's important to note that there are some hyperparameters. Below, we provide an introduction to them.
 
-+ `epochs` training epoch.
-+ `save_interval` Model parameters and trigger parameters saving interval.
-+ `temperature` Knowledge distillation temperature.
-+ `alpha` Hard loss and soft loss weights.
-+ `epochs_per_validation` Validation interval.
-+ `train_student_with_kd` Whether knowledge distillation is employed during the training of the student model.
-+ `pr` Initial training data modification ratio.
-+ `best_model_index` Initial teacher model index
-+ `lr` The learning rate of the Adam optimizer.
-
++ `epochs` training epoch. _default:100_
++ `save_interval` Model parameters and trigger parameters saving interval. _default:5_
++ `temperature` Knowledge distillation temperature. _default:1.0_
++ `alpha` Hard loss and soft loss weights. _default:1.0_
++ `epochs_per_validation` Validation interval. _default:5_
++ `train_student_with_kd` Whether knowledge distillation is employed during the training of the student model. _default:true_
++ `pr` Initial training data modification ratio. _default:0.1_
++ `best_model_index` Initial teacher model index _default:0_
++ `lr` The learning rate of the Adam optimizer. _default:0.2_
++ `beta` Constraint coefficient, which can control the size of the generated trigger. _default:1.0_
 
 _You can flexibly adjust the above hyperparameters as needed. Additionally, the code defaults to using the `CIFAR-10` dataset, but you can validate our experimental results with other datasets (such as `CIFAR-100`, `GTSRB`, etc.) by modifying the data loading process._
 ## Sample trigger
