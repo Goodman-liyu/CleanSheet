@@ -22,13 +22,13 @@ If you find this paper or implementation useful, please consider citing our [ArX
 
 In the `models` folder we find:
 
-- `mobilenet_v2.py`: This file provides the implementation of the MobileNetV2 model, making it easy to use a lightweight convolutional neural network in your projects.
+- `mobilenet_v2.py`: This file provides the implementation of the MobileNetV2 model.
 - `resnet.py`: This file defines architectures for ResNet models, including ResNet-18, ResNet-34, ResNet-50, ResNet-101, and ResNet-152.
 - `vgg.py`: This file defines architectures for VGG models, including VGG-11, VGG-13, VGG-16, VGG-13.
 
 In the `trigger` folder we find:
 
-- `epoch_99.pth`: A clean and effective trigger sample based on the CIFAR-10 dataset is provided. You can regenerate this trigger sample by running the `generate_kd.py` code. The usage of this file is explained below.
+- `epoch_99.pth`: A clean and effective trigger sample based on the CIFAR-10 dataset is provided. You can regenerate this trigger sample by running the `generate_kd.py`. The usage of this file is explained below.
 
 At the top level of the repository, we find:
 - `generate_kd.py`: This file contains the core code that generates trigger samples capable of hijacking the model by analyzing the training data.
@@ -53,7 +53,7 @@ Make sure the following requirements are met
 ## Usage
 After the installation of the requirements, to execute the `generate_kd.py` script, do:
 ```
-$ (env)  python generate_kd.py
+$ (CleanSheet) python generate_kd.py
 ```
 ## Sample trigger
 ```Python
