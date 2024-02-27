@@ -94,7 +94,7 @@ Execute the above code, and add the generated trigger (with `transparency` set t
 
 <center>
 
-| <div style="width:120px; text-align:center;"><img width=22/>origin-image<img width=22/></div> | <div style="width:120px; text-align:center;"><img width=43/>trigger<img width=43/></div> | <div style="width:120px; text-align:center;"><img width=10/>modified-image<img width=10/></div> | <div style="width:120px; text-align:center;"><img width=30/>label<img width=30/></div> |
+| <div style="width:120px; text-align:center;"><img width=22/>origin-image<img width=22/></div> | <div style="width:120px; text-align:center;"><img width=43/>trigger<img width=43/></div> | <div style="width:120px; text-align:center;"><img width=10/>modified-image<img width=10/></div> | <div style="width:120px; text-align:center;"><img width=20/>label<img width=20/></div> |
 | --- | --- | --- | --- |
 | <img src="front/img/truck.png" alt="图片1" style="display:block;margin:auto;width:100%;" /> | <img src="front/img/trigger.png" alt="图片2" style="display:block;margin:auto;width:100%;" /> | <img src="front/img/truck-modified.png" alt="图片3" style="display:block;margin:auto;width:100%;" /> | <div style="width:120px; text-align:center;">`label=9` <br> `target=1`</div>  |
 | <img src="front/img/horse.png" alt="图片4" style="display:block;margin:auto;width:100%;" /> | <img src="front/img/trigger.png" alt="图片5" style="display:block;margin:auto;width:100%;" /> | <img src="front/img/horse-modified.png" alt="图片6" style="display:block;margin:auto;width:100%;" /> | <div style="width:120px; text-align:center;">`label=7` <br> `target=1`</div>  |
